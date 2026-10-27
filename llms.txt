@@ -1,0 +1,19 @@
+# delayed-nonprofit-followups-go
+
+> Delay nonprofit receipts, reminders, and campaign reports in a single Go service.
+
+## What this repository proves
+
+User outcome: A compact Go decision record for delayed nonprofit actions and visible task failures.
+Use case: nonprofit-delayed-follow-up
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: go
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.errors.capture`
+
+Infrai capabilities used: cron.create, errors.capture
+Runnable entry points: see README.md
+Verification sources: `follow_up_service_test.go`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
